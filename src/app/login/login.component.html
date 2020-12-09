@@ -1,0 +1,35 @@
+<section class="Form my-xl-5 mx-5" style="padding: 10px;">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-lg-5">
+        <img src="https://media.istockphoto.com/photos/drink-popcorn-and-movie-tickets-on-white-background-vertical-picture-id959115176?k=6&m=959115176&s=170667a&w=0&h=fWATCa4Kq6e83h-ausjkgAH5rERIe8De30JypwIcs-Y=" class="img-fluid" alt="loading..">
+      </div>
+      <div class="col-lg-7 px-5 py-5">
+        <form>
+          <h1 class="font-weight-bold py-3"> Login</h1>
+          <div class="form-row">
+            <div class="col-lg-7">
+              <input class="form-control my-3" type="text" [(ngModel)]="username" name="username" placeholder="username">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-lg-7">
+              <input class="form-control" type="password" [(ngModel)]="password" name="password" placeholder="password">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-lg-7">
+              <p [hidden]="wrongCredentials" style="color: red">*Invalid login credentials</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-lg-7">
+              <button class="form-control btn btn-dark my-2" type="button" (click)="check()" [disabled] = "password === '' || username ==='' || disabled">Login</button>
+            </div>
+          </div>
+        </form>
+        </div>
+    </div>
+  </div>
+  </section>
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "pacman" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>

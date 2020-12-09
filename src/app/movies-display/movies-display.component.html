@@ -1,0 +1,18 @@
+
+<div class="col-lg-4 col-md-4 col-sm-6 product-grid" style=" max-width: 300px; height: 600px" >
+   <a class="fh5co-card-item" type="button" data-toggle="modal" data-target="#{{movie.uuid}}">
+     <div class="card"  style="cursor: pointer">
+       <div class="card-body">
+         <figure class="my-2" style="height: 150px;">
+           <img class="img-fluid img-responsive mb-3 w-50" src="https://ui-avatars.com/api/?name={{movie.title}}&color=000&background=random&rounded=true" alt="loading...">
+         </figure>
+         <div class="fh5co-text">
+           <h2 class="panel-heading">{{ movie.title }}</h2>
+           <h5 class="panel-body">Genre(s): {{ movie.genres }}</h5>
+           <p class="panel-body">Description: {{ movie.description }} </p>
+         </div>
+       </div>
+     </div>
+   </a>
+ </div>
+
